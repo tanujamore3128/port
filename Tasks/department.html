@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Departments Section</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        body{
+            background:#f5f6fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .department-section{
+            padding:50px 0;
+        }
+
+        .section-title{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .section-title h1{
+            font-size:55px;
+            font-weight:bold;
+            color:#0b1b3a;
+        }
+
+        .section-title p{
+            font-size:22px;
+            color:#666;
+        }
+
+        .dept-card{
+            background:#fff;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom:30px;
+            transition:0.3s;
+        }
+
+        .dept-card:hover{
+            transform:translateY(-5px);
+        }
+
+        .dept-card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card-body{
+            padding:20px;
+        }
+
+        .badge-custom{
+            position:absolute;
+            top:15px;
+            left:15px;
+            background:#2196f3;
+            color:white;
+            padding:6px 12px;
+            border-radius:5px;
+            font-size:12px;
+        }
+
+        .image-box{
+            position:relative;
+        }
+
+        .dept-title{
+            font-size:28px;
+            font-weight:bold;
+            margin-bottom:15px;
+        }
+
+        .dept-desc{
+            color:#555;
+            line-height:1.8;
+            margin-bottom:20px;
+        }
+
+        .btn-custom{
+            border:2px solid #2196f3;
+            color:#2196f3;
+            background:none;
+            padding:8px 20px;
+            border-radius:5px;
+            font-weight:bold;
+        }
+
+        .btn-custom:hover{
+            background:#2196f3;
+            color:white;
+        }
+
+        .footer-text{
+            text-align:center;
+            margin-top:20px;
+            font-size:20px;
+            color:#555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container department-section">
+
+    <div class="section-title">
+        <h1>Departments</h1>
+        <p>Explore our engineering departments and choose your path to success</p>
+    </div>
+
+    <div class="row">
+
+        <!-- Mechanical -->
+        <div class="col-md-4">
+            <div class="dept-card">
+                <div class="image-box">
+                    <span class="badge-custom">Engineering</span>
+                    <img src="image/m1.jpg" alt="">
+                </div>
+
+                <div class="card-body">
+                    <h3 class="dept-title">Mechanical  <br> Engineering</h3>
+                    <p class="dept-desc">
+                        Design, analyze and manufacture mechanical systems that drive the world forward.
+                    </p>
+                    <button class="btn btn-custom">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Electrical -->
+        <div class="col-md-4">
+            <div class="dept-card">
+                <div class="image-box">
+                    <span class="badge-custom" style="background:green;">Engineering</span>
+                    <img src="image/e1.jpg" alt="">
+                </div>
+
+                <div class="card-body">
+                    <h3 class="dept-title">Electrical <br> Engineering</h3>
+                    <p class="dept-desc">
+                        Innovate in power systems, electronics and control technologies.
+                    </p>
+                    <button class="btn btn-custom" style="border-color:green;color:green;">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Computer -->
+        <div class="col-md-4">
+            <div class="dept-card">
+                <div class="image-box">
+                    <span class="badge-custom" style="background:#e91e63;">Engineering</span>
+                    <img src="image/c1.jpg" alt="">
+                </div>
+
+                <div class="card-body">
+                    <h3 class="dept-title">Computer Science Engineering</h3>
+                    <p class="dept-desc">
+                        Build software, solve problems and shape the future with code.
+                    </p>
+                    <button class="btn btn-custom" style="border-color:#e91e63;color:#e91e63;">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <!-- Civil -->
+        <div class="col-md-4">
+            <div class="dept-card">
+                <div class="image-box">
+                    <span class="badge-custom" style="background:#673ab7;">Engineering</span>
+                    <img src="image/ce1.jpg" alt="">
+                </div>
+
+                <div class="card-body">
+                    <h3 class="dept-title">Civil <br> Engineering</h3>
+              <p class="dept-desc">
+                        Design and build infrastructure that improves lives and communities.
+                    </p>
+                    <button class="btn btn-custom" style="border-color:#673ab7;color:#673ab7;">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Electronics -->
+        <div class="col-md-4">
+            <div class="dept-card">
+                <div class="image-box">
+                    <span class="badge-custom" style="background:orange;">Engineering</span>
+                    <img src="image/ee.jpg" alt="">
+                </div>
+
+                <div class="card-body">
+                    <h3 class="dept-title">Electronics & Communication</h3>
+                    <p class="dept-desc">
+                        Connect the world through communication systems and technology.
+                    </p>
+                    <button class="btn btn-custom" style="border-color:orange;color:orange;">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Environmental -->
+        <div class="col-md-4">
+            <div class="dept-card">
+                <div class="image-box">
+                    <span class="badge-custom" style="background:#00bfa5;">Engineering</span>
+                    <img src="image/en.jpg" alt="">
+                </div>
+
+                <div class="card-body">
+                    <h3 class="dept-title">Environmental Engineering</h3>
+                    <p class="dept-desc">
+                        Work for a sustainable future and a cleaner environment.
+                    </p>
+                    <button class="btn btn-custom" style="border-color:#00bfa5;color:#00bfa5;">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-text">
+        🎓 Build your future with innovation and excellence.
+    </div>
+
+</div>
+
+</body>
+</html>
